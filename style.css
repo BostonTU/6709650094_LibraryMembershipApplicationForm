@@ -1,0 +1,119 @@
+/* Basic reset for better cross-browser consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Form container */
+form {
+    max-width: 600px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels and inputs styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+#membershipForm label[for="male"],
+#membershipForm label[for="female"] {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+#membershipForm input[type="radio"] {
+    margin-right: 5px;
+}
+input[type="text"],
+input[type="date"],
+input[type="radio"],
+input[type="checkbox"],
+button {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Adjust width of text inputs and date input */
+input[type="text"],
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Book genres styling - inline display */
+#membershipForm div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#membershipForm div input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Checkbox labels inline */
+#membershipForm div label {
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+/* Button styling */
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.newsletter-section {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.newsletter-section label {
+    font-weight: normal;
+    color: #555;
+}
