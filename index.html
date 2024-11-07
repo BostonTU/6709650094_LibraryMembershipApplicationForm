@@ -7,6 +7,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>Library Membership Application</h1>
+    <form id="membershipForm">
+        <label for="nameThai">ชื่อ - นามสกุล (ภาษาไทย) <span>*</span></label>
+        <input type="text" id="nameThai" name="nameThai" required>
+        <label for="nameEng">Full Name (English) <span>*</span></label>
+        <input type="text" id="nameEng" name="nameEng" required>
+
+        <label>Gender <span>*</span></label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <label for="studentID">Student ID <span>*</span></label>
+        <input type="text" id="studentID" name="studentID" pattern="\d{8}" placeholder="e.g., 6709650000" required>
+        <label for="faculty">Faculty (คณะ) <span>*</span></label>
+        <input type="text" id="faculty" name="faculfy" required>
+
+        <label for="birthDate">Date of Birth <span>*</span></label>
+        <input type="date" id="birthDate" name="birthDate" required>
+        <label>Preferred Book Genres <span>*</span></label>
+        <div>
+            <input type="checkbox" id="fiction" name="bookGenre" value="fiction">
+            <label for="fiction">Fiction</label><br>
+            <input type="checkbox" id="nonfiction" name="bookGenre" value="nonfiction">
+            <label for="nonfiction">Non-Fiction</label><br>
+            <input type="checkbox" id="science" name="bookGenre" value="science">
+            <label for="science">Science</label><br>
+            <input type="checkbox" id="history" name="bookGenre" value="history">
+            <label for="history">History</label><br>
+            <input type="checkbox" id="biography" name="bookGenre" value="biography">
+            <label for="biography">Biography</label><br>
+            <input type="checkbox" id="Etc" name="bookGenre" value="Etc">
+            <label for="biography">Etc.</label><br>
+        </div>
+        <label for="newsletter">Receive Library News via Email?</label>
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <button type="submit">Submit</button>
+
 </body>
 </html>
