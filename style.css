@@ -1,4 +1,3 @@
-/* Basic reset for better cross-browser consistency */
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +20,6 @@ h1 {
     text-align: center;
 }
 
-/* Form container */
 form {
     max-width: 600px;
     width: 100%;
@@ -31,7 +29,6 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Labels and inputs styling */
 label {
     display: block;
     margin-bottom: 5px;
@@ -57,7 +54,6 @@ button {
     width: 100%;
 }
 
-/* Adjust width of text inputs and date input */
 input[type="text"],
 input[type="date"] {
     padding: 10px;
@@ -73,7 +69,6 @@ input[type="checkbox"] {
     margin-right: 5px;
 }
 
-/* Book genres styling - inline display */
 #membershipForm div {
     display: flex;
     flex-wrap: wrap;
@@ -85,13 +80,11 @@ input[type="checkbox"] {
     margin-right: 5px;
 }
 
-/* Checkbox labels inline */
 #membershipForm div label {
     font-weight: normal;
     margin-right: 15px;
 }
 
-/* Button styling */
 button[type="submit"] {
     background-color: #007bff;
     color: white;
